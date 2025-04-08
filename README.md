@@ -1,21 +1,16 @@
 # Calculator
 
-<<<<<<< HEAD
 Project for The Odin Project Foundations Course
 
-=======
->>>>>>> fdafb7c968b4573eee65f2627216fbc9a5e29b76
 Project for The Odin Project Foundations Course.
 
 Here are some use cases (expectations about your project):
 
 Your calculator is going to contain functions for all of the basic math operators you typically find on calculators, so start by creating functions for the following items and testing them in your browser’s console:
-<<<<<<< HEAD
 
 add subtract multiply divide
 
 A calculator operation will consist of a number, an operator, and another number. For example, 3 + 5.
-=======
   
   add
   subtract
@@ -23,7 +18,6 @@ A calculator operation will consist of a number, an operator, and another number
   divide
   
 A calculator operation will consist of a number, an operator, and another number. For example, 3 + 5. 
->>>>>>> fdafb7c968b4573eee65f2627216fbc9a5e29b76
 
 Create three variables, one for each part of the operation. You’ll use these variables to update your display later.
 
@@ -33,16 +27,14 @@ Create a basic HTML calculator with buttons for each digit and operator (includi
 
 Don’t worry about making them functional just yet.
 
-<<<<<<< HEAD
 There should also be a display for the calculator. Go ahead and fill it with some dummy numbers so it looks correct. Add a “clear” button.
 
 Create the functions that populate the display when you click the digit buttons.
-=======
+
 There should also be a display for the calculator. Go ahead and fill it with some dummy numbers so it looks correct.
 Add a “clear” button.
 
 Create the functions that populate the display when you click the digit buttons. 
->>>>>>> fdafb7c968b4573eee65f2627216fbc9a5e29b76
 
 You should store the content of the display (the number) in a variable for use in the next step.
 
@@ -50,21 +42,18 @@ Make the calculator work! You’ll need to store the first and second numbers in
 
 You should already have the code that can populate the display, so once operate has been called, update the display with the result of the operation.
 
-<<<<<<< HEAD
 This is the hardest part of the project.
 
 You need to figure out how to store all the values and call the operate function with them.
-=======
+
 This is the hardest part of the project. 
 
 You need to figure out how to store all the values and call the operate function with them. 
->>>>>>> fdafb7c968b4573eee65f2627216fbc9a5e29b76
 
 Don’t feel bad if it takes you a while to figure out the logic.
 
 Gotchas: watch out for and fix these bugs if they show up in your code:
 
-<<<<<<< HEAD
 Your calculator should not evaluate more than a single pair of numbers at a time.
 
 Example: you enter a number (12), followed by an operator button (+), a second number button (7), and a second operator button (-).
@@ -74,7 +63,7 @@ Your calculator should then do the following: first, evaluate the initial pair o
 Finally, use that result (19) as the first number in a new calculation, along with the next operator (-).
 
 An example of the behavior we’re looking for can be seen in this student’s calculator live preview.
-=======
+
   Your calculator should not evaluate more than a single pair of numbers at a time. 
   
   Example: you enter a number (12), followed by an operator button (+), a second number button (7), and a second operator button (-). 
@@ -84,7 +73,6 @@ An example of the behavior we’re looking for can be seen in this student’s c
   Finally, use that result (19) as the first number in a new calculation, along with the next operator (-). 
   
   An example of the behavior we’re looking for can be seen in this student’s calculator live preview.
->>>>>>> fdafb7c968b4573eee65f2627216fbc9a5e29b76
 
 You should round answers with long decimals so that they don’t overflow the display.
 
@@ -94,7 +82,6 @@ Pressing “clear” should wipe out any existing data. Make sure the user is re
 
 Display a snarky error message if the user tries to divide by 0… and don’t let it crash your calculator!
 
-<<<<<<< HEAD
 Make sure that your calculator only runs an operation when supplied with two numbers and an operator by the user.
 
 Example: you enter a number (2), followed by an operator button (+). You press the operator button (+) a second consecutive time.
@@ -112,7 +99,7 @@ Extra credit
 Users can get floating point numbers if they do the math required to get one, but they can’t type them in yet.
 
 Add a . button and let users input decimals! Make sure you don’t let them type more than one though, like: 12.3.56.5.
-=======
+
 Make sure that your calculator only runs an operation when supplied with two numbers and an operator by the user. 
 
 Example: you enter a number (2), followed by an operator button (+). You press the operator button (+) a second consecutive time. 
@@ -132,7 +119,6 @@ Check whether this is the case on your calculator!
 Users can get floating point numbers if they do the math required to get one, but they can’t type them in yet. 
 
 Add a . button and let users input decimals! Make sure you don’t let them type more than one though, like: 12.3.56.5. 
->>>>>>> fdafb7c968b4573eee65f2627216fbc9a5e29b76
 
 Disable the . button if there’s already a decimal separator in the display.
 
