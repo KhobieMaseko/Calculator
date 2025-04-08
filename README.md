@@ -122,7 +122,6 @@ Disable the . button if there’s already a decimal separator in the display.
 
 Add a “backspace” button, so the user can undo their last input if they click the wrong number.
 
-![Calculator](https://github.com/user-attachments/assets/eb0363b0-a718-4c62-bab3-ab2299c8c9c1)
-
-
 Add keyboard support!
+
+![Calculator](https://github.com/user-attachments/assets/eb0363b0-a718-4c62-bab3-ab2299c8c9c1)
