@@ -1,110 +1,116 @@
-
+/* Base Styles */
 body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     background:
-    radial-gradient(circle at 10% 20%, rgba(255, 152, 0, 0.2) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, rgba(156, 39, 176, 0.2) 0%, transparent 20%),
-    radial-gradient(circle at 30% 70%, rgba(33, 150, 243, 0.2) 0%, transparent 20%),
-    radial-gradient(circle at 70% 30%, rgba(76, 175, 80, 0.2) 0%, transparent 20%),
-    linear-gradient(135deg, #f5f7fa 0%, #c9d4e7 100%);
+        radial-gradient(circle at 10% 20%, rgba(255, 152, 0, 0.2) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(156, 39, 176, 0.2) 0%, transparent 20%),
+        radial-gradient(circle at 30% 70%, rgba(33, 150, 243, 0.2) 0%, transparent 20%),
+        radial-gradient(circle at 70% 30%, rgba(76, 175, 80, 0.2) 0%, transparent 20%),
+        linear-gradient(135deg, #f5f7fa 0%, #c9d4e7 100%);
     background-attachment: fixed;
+    overflow: hidden;
 }
 
+/* Calculator Container - Scaled 110% */
 .calculator {
-    width: 300px;
-    background-color: #333;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    /* additional stylings */
+    width: 330px; /* Base 300px * 1.1 */
+    background: rgba(213, 218, 224, 0.9);
+    border-radius: 22px; /* 20px * 1.1 */
+    padding: 27.5px; /* 25px * 1.1 */
     box-shadow:
-        0 10px 20px rgba(0, 0, 0, 0.19),
-        0 8px 8px rgba(0, 0, 0, 0.23);
-    border: 5px solid rgba(201, 200, 200, 0.2);
+        0 11px 22px rgba(0, 0, 0, 0.19),
+        0 8.8px 8.8px rgba(0, 0, 0, 0.23),
+        9.9px 9.9px 17.6px rgba(163, 177, 198, 0.6),
+        -9.9px -9.9px 17.6px rgba(255, 255, 255, 0.5);
+    border: 3.3px solid rgba(201, 200, 200, 0.2);
+    backdrop-filter: blur(2.2px);
+    margin: 22px;
 }
 
+/* Display Area */
 .display {
-    background-color: #3f3f3f;
+    background: linear-gradient(to right, #3b3b3b, #4d4d4d);
     color: white;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    padding: 22px;
+    border-radius: 5.5px;
+    margin-bottom: 22px;
     text-align: right;
     word-wrap: break-word;
-    min-height: 60px;
-
-    background: linear-gradient(to right, #3b3b3b, #4d4d4d);
-    border: 1px solid #444;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-    opacity: 0.7;
+    min-height: 66px;
+    border: 1.1px solid #444;
+    box-shadow: inset 0 1.1px 3.3px rgba(0, 0, 0, 0.5);
 }
 
 .previous-operand {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1rem;
-    min-height: 20px;
+    font-size: 1.1rem;
+    min-height: 22px;
 }
 
 .current-operand {
     color: white;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    text-shadow: 0 0 5.5px rgba(255, 255, 255, 0.3);
 }
 
+/* Buttons */
 button {
-    width: 60px;
-    height: 60px;
-    /* border: none; */
-    border:#bbbbbb 0.5px;
-    border-radius: 5px;
-    margin: 5px;
-    font-size: 1.5rem;
+    width: 66px;
+    height: 66px;
+    border: 0.55px solid #bbbbbb;
+    border-radius: 5.5px;
+    margin: 5.5px;
+    font-size: 1.65rem;
     cursor: pointer;
-    background-color: #666;
-    color: white;
-    transition: background-color 0.2s;
-    /* smooth button stylings */
-    transform: scale(1);
-    transition: all 0.1s ease;
+    background: #cdd2d8;
+    color: #333;
+    transition: all 0.15s ease;
+    box-shadow:
+        3.3px 3.3px 5.5px rgba(154, 167, 187, 0.6),
+        -3.3px -3.3px 5.5px rgba(255, 255, 255, 0.5);
 }
 
 button:hover {
-    background-color: #777;
+    background: #dde0e5;
+    transform: translateY(-2.2px);
+    box-shadow: 0 4.4px 8.8px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
-    background-color: #555;
-
-    transform: scale(0.95);
+    background: #b8bcc2;
+    transform: translateY(1.1px);
+    box-shadow:
+        inset 3.3px 3.3px 5.5px rgba(163, 177, 198, 0.6),
+        inset -3.3px -3.3px 5.5px rgba(255, 255, 255, 0.5);
 }
 
+/* Special Buttons */
 .span-two {
-    width: 134px;
+    width: 147.4px; /* 134px * 1.1 */
 }
 
 [data-action="operator"] {
     background-color: #ff9500;
+    color: white;
+    text-shadow: 0 0 5.5px rgba(255, 255, 255, 0.5);
 }
 
 [data-action="operator"]:hover {
     background-color: #ffaa33;
-}
-
-[data-action="operator"]:active {
-    background-color: #cc7700;
+    box-shadow: 0 0 11px rgba(255, 149, 0, 0.5);
 }
 
 [data-action="clear"],
 [data-action="delete"] {
     background-color: #bbbbbb;
     color: black;
-    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    font-weight: light;
+    font-weight: 600;
+    letter-spacing: 1.1px;
 }
 
 [data-action="clear"]:hover,
@@ -112,33 +118,30 @@ button:active {
     background-color: #e7e5e5;
 }
 
-[data-action="clear"]:active,
-[data-action="delete"]:active {
-    background-color: #888888;
+/* Animation Effects */
+@keyframes gentlePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
 }
 
-
-
-/* extra stylings */
 .calculator {
-    background: #d5dae0;
-    box-shadow:
-        9px 9px 16px rgba(163, 177, 198, 0.6),
-        -9px -9px 16px rgba(255, 255, 255, 0.5);
-
-    backdrop-filter: blur(2px);
-    background-color: rgba(213, 218, 224, 0.85); /* Slightly transparent */
+    animation: gentlePulse 3s ease-in-out infinite;
 }
 
-button {
-    background: #cdd2d8;
-    box-shadow:
-        3px 3px 5px rgba(154, 167, 187, 0.6),
-        -3px -3px 5px rgba(255, 255, 255, 0.5);
-}
-
-button:active {
-    box-shadow:
-        inset 3px 3px 5px rgba(163, 177, 198, 0.6),
-        inset -3px -3px 5px rgba(255, 255, 255, 0.5);
+/* Responsive Considerations */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90vw;
+        padding: 5vw;
+    }
+    button {
+        width: 18vw;
+        height: 18vw;
+        margin: 1.5vw;
+        font-size: 1.4rem;
+    }
+    .span-two {
+        width: 38vw;
+    }
 }
