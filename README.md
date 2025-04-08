@@ -2,8 +2,6 @@
 
 Project for The Odin Project Foundations Course
 
-Project for The Odin Project Foundations Course.
-
 Here are some use cases (expectations about your project):
 
 Your calculator is going to contain functions for all of the basic math operators you typically find on calculators, so start by creating functions for the following items and testing them in your browser’s console:
@@ -123,5 +121,8 @@ Add a . button and let users input decimals! Make sure you don’t let them type
 Disable the . button if there’s already a decimal separator in the display.
 
 Add a “backspace” button, so the user can undo their last input if they click the wrong number.
+
+![Calculator](https://github.com/user-attachments/assets/eb0363b0-a718-4c62-bab3-ab2299c8c9c1)
+
 
 Add keyboard support!
